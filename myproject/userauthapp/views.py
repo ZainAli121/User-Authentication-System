@@ -30,6 +30,7 @@ def loginuser(request):
 
 def logoutUser(request):
     logout(request)
+    messages.success(request, "Logged Out Successfully!")
     return redirect("/login")
 
 def signupuser(request):
